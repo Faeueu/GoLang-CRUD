@@ -25,7 +25,7 @@ func main() {
 
 	routes.InitRoutes(&router.RouterGroup, userController)
 
-	if err := router.Run(":3600"); err != nil {
+	if err := router.Run(":8080"); err != nil {
 		log.Fatal(err)
 	}
 }
